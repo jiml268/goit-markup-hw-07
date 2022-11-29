@@ -1,0 +1,17 @@
+.modal-close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color $timer $timing-function;
+
+
+&:hover,
+&:focus {
+    background-color: $accent-color;
+
+
+}
+}
