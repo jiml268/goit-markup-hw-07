@@ -4,11 +4,11 @@
 
 
 
-&__icon {
+.social-media__icon {
     fill: currentColor
 }
 
-&__link {
+.social-media__link {
     width: 40px;
     height: 40px;
     background-color: $white-text-color;
@@ -18,17 +18,18 @@
     color: #AFB1B8;
     border-radius: 50%;
 
-}
-
-&__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-&__link:hover,
-&__link:focus{
+&:hover,
+&:focus{
     background-color: $accent-color;
     color: $white-text-color;
 }
+}
+
+.social-media__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
 }
 
 

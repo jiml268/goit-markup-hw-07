@@ -9,8 +9,8 @@
     color: $accent-color;
         }
 
-
-&__link {
+}
+.footer-address__link {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
@@ -19,15 +19,9 @@
 }
 
 
-&__contact {
+.footer-address__contact {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     color: $footer-contact-color;
-
-&:hover,
-&:focus {
-    color: $accent-color;
-}
-}
 }

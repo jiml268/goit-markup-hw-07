@@ -1,8 +1,7 @@
-.navigation{
-&__list {
+.navigation__list {
     display: flex;
 }
-    &__link {
+    .navigation__link {
             font-weight: 500;
             font-size: 14px;
             line-height: calc(16/14);
@@ -24,21 +23,21 @@
         }
 
 
-&__item:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 50px;
 }
-}
 
 
 
 
-.current-page {
+
+.navigation__current-page {
     color: $accent-color;
     position: relative;
     display: inline-block;
 }
 
-.current-page::after {
+.navigation__current-page::after {
     content: '';
     width: 100%;
     background: #2196F3;

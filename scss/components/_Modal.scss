@@ -31,7 +31,7 @@
      padding: 8px;
  
 
- &__title {
+  .modal-window__title {
      padding-top: 40px;
      ;
      font-weight: 700;
@@ -44,7 +44,7 @@
      margin-bottom: 12px;
  }
 
- &__form {
+  .modal-window__form {
     width: 448px;
     padding-bottom: 40px;
     margin: 0 auto;
@@ -52,7 +52,7 @@
 }
 
 
- &__input {
+  .modal-window__input {
      margin-top: 4px;
      height: 40px;
      border: 1px solid rgba(33, 33, 33, 0.2);
@@ -60,9 +60,15 @@
      transition: $border-color $timer $timing-function;
      cursor: pointer;
      padding-left: 42px;
+
+&:hover,
+&:focus{
+     border-color: $accent-color;
+     outline: none;
+ }
  }
 
- &__input-comment {
+  .modal-window__input-comment {
      padding: 12px 16px;
      box-sizing: border-box;
      width: 448px;
@@ -73,11 +79,14 @@
      margin-top: 4px;
      margin-bottom: 10px;
 
+&:hover,
+&:focus{
+     border-color: $accent-color;
+     outline: none
  }
 
- 
-
- &__label {
+ }
+  .modal-window__label {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -92,35 +101,27 @@
  }
 
 
- &__input:hover,
- &__input:focus,
- &__input-comment:hover,
- &__input-comment:focus {
-     border-color: $accent-color;
-     outline: none
- }
+  
 
- &__label:hover .modal-icon,
- &__label:focus .modal-icon {
+  .modal-window__label:hover .modal-window__icon,
+  .modal-window__label:focus .modal-window__icon {
      color: $accent-color;
      fill: currentColor;
  }
 
- &__label:not(last-child) {
+  .modal-window__label:not(last-child) {
      margin-bottom: 10px;
  }
 }
 
  .modal-submit-button {
-    @include button
- }
-
-
- .modal-submit-button:hover,
- .modal-submit-button:focus {
+    @include button;
+ 
+ &:hover,
+ &:focus {
      background-color: #1976d2;
  }
-
+}
  .modal-i-agree {
      position: relative;
      width: 448px;
@@ -131,7 +132,7 @@
      color: $secondary-text-color;
  }
 
- .modal-icon {
+ .modal-window__icon {
      position: absolute;
      top: 50%;
      margin-left: 12px;
@@ -151,7 +152,7 @@
      overflow: hidden;
  }
 
- .modal-checkbox-label {
+ .modal__checkbox-label {
      padding-top: 20px;
      padding-left: 20px;
      padding-bottom: 30px;
@@ -172,14 +173,26 @@
      background-size: auto 100%
  }
 
- .checkbox:checked+.modal-checkbox-label>.modal-checkbox {
+ .checkbox:checked+.modal__checkbox-label>.modal-checkbox {
      background-color: $accent-color;
      border-color: white;
  }
  
 
- .terms-condition,
- terms-condition-link:visited {
+ .modal__terms-condition-link:hover, .modal__terms-condition-link:focus{
+    color: $button-hover-color;
+ }
+
+.modal__i-agree-text{
+font-weight: 400;
+font-size: 14px;
+line-height: calc(24/14);
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+
+ .modal__terms-condition-link:visited {
      font-family: 'Roboto';
      font-style: normal;
      font-weight: 400;
@@ -187,4 +200,8 @@
      line-height: calc(24/14);
      letter-spacing: 0.03em;
      color: $main-title-color;
+ }
+
+ .modal__terms-condition-link:hover, .modal__terms-condition-link:focus{
+    color: $button-hover-color;
  }
