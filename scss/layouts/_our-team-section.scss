@@ -1,5 +1,6 @@
+@use "../utils/variables";
 .our-team{
-    background-color: $secondary-background;
+    background-color: variables.$secondary-background;
 
 
 .our-team__title {
@@ -8,7 +9,7 @@
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: $main-text-color;
+    color: variables.$main-text-color;
     margin-bottom: 50px;
 }
 
@@ -19,7 +20,7 @@
 
 .our-team__item {
     width: 270px;
-    background-color: $white-text-color;
+    background-color: variables.$white-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -50,7 +51,7 @@
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: $main-title-color;
+    color: variables.$main-title-color;
     margin-bottom: 16px;
 }
 

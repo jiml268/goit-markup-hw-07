@@ -1,3 +1,4 @@
+@use "../utils/variables";
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ a {
 
 a:hover,
 a:focus {
-    color: var(--accent-color);
+    color: variables.$accent-color;
 }
 
 button {
@@ -43,7 +44,7 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: $main-text-color;
+    color: variables.$main-text-color;
     font-weight: 500;
     letter-spacing: 0.03em;
 }

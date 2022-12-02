@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .section-description {
     font-weight: 700;
     font-size: 36px;
@@ -5,7 +6,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: $main-text-color;
+    color: variables.$main-text-color;
 }
 
 .our-team-item-description {
@@ -27,6 +28,6 @@
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: $main-title-color;
+    color: variables.$main-title-color;
     margin-bottom: 16px;
 }

@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .navigation__list {
     display: flex;
 }
@@ -6,7 +7,7 @@
             font-size: 14px;
             line-height: calc(16/14);
             letter-spacing: 0.02em;
-            color: $main-text-color;
+            color:variables.$main-text-color;
             display: block;
             padding-top: 32px;
             padding-bottom: 32px;
@@ -16,8 +17,8 @@
         font-size: 14px;
         line-height: calc(14/16);
         letter-spacing: 0.02em;
-        color: $accent-color;
-        fill: $accent-color;
+        color: variables.$accent-color;
+        fill: variables.$accent-color;
     }
 
         }
@@ -32,7 +33,7 @@
 
 
 .navigation__current-page {
-    color: $accent-color;
+    color: variables.$accent-color;
     position: relative;
     display: inline-block;
 }
@@ -42,7 +43,7 @@
     width: 100%;
     background: #2196F3;
     height: 4px;
-    background-color: $accent-color;
+    background-color: variables.$accent-color;
     position: absolute;
     left: 0;
     bottom: 0;

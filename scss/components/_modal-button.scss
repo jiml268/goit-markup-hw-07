@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .modal-window__close-button {
     width: 30px;
     height: 30px;
@@ -5,12 +6,12 @@
     float: right;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: background-color $timer $timing-function;
+    transition: background-color variables.$timer variables.$timing-function;
 
 
 &:hover,
 &:focus {
-    background-color: $accent-color;
+    background-color: variables.$accent-color;
 
 
 }

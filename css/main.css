@@ -27,7 +27,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 button {

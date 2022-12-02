@@ -1,14 +1,15 @@
+@use "../utils/variables";
 .header__logo {
     font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: $accent-color;
+    color: variables.$accent-color;
     margin-right: 97px;
 
     &:hover, &:focus {
-        color: $button-hover-color; 
+        color: variables.$button-hover-color; 
      }
 }
 
@@ -20,10 +21,10 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: $accent-color;
+    color: variables.$accent-color;
     margin-right: 97px;
 
     &:hover, &:focus {
-       color: $button-hover-color; 
+       color: variables.$button-hover-color; 
     }
 }

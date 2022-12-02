@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .header__contacts-list {
     display: flex;
     margin-left: auto;
@@ -12,7 +13,7 @@
     font-size: 14px;
     line-height: calc(14/16);
     letter-spacing: 0.02em;
-    color: $secondary-text-color;
+    color: variables.$secondary-text-color;
     padding: 32px 0;
     display: flex;
     align-items: center;
@@ -22,8 +23,8 @@
     font-size: 14px;
     line-height: calc(14/16);
     letter-spacing: 0.02em;
-    color: $accent-color;
-    fill: $accent-color;
+    color: variables.$accent-color;
+    fill: variables.$accent-color;
 }
 
 

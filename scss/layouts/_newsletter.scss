@@ -1,3 +1,5 @@
+@use "../utils/variables";
+@use "../components/button";
 .newsletter {
     margin-left: 93px;
 }
@@ -5,7 +7,7 @@
 .newsletter__head {
     font-size: 14px;
     line-height: calc(16/14);
-    color: $white-text-color;
+    color:variables.$white-text-color;
     margin-bottom: 20px;
 
 }
@@ -34,17 +36,17 @@
 
 &:hover,
 &:focus {
-    color: $white-text-color;
+    color: variables.$white-text-color;
     background-color: transparent;
-    border-color: $white-text-color;
+    border-color: variables.$white-text-color;
 }
 }
 .newsletter__button {
-    @include button;
+    @include button.button;
 
 &__button:hover,
 &__button:focus {
-    background-color: $button-hover-color;
+    background-color: variables.$button-hover-color;
 }
 
 .newsletter__send-icon {

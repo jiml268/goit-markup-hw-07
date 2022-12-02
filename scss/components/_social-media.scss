@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .social-media {
     display: flex;
     justify-content: center;
@@ -11,7 +12,7 @@
 .social-media__link {
     width: 40px;
     height: 40px;
-    background-color: $white-text-color;
+    background-color: variables.$white-text-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +21,8 @@
 
 &:hover,
 &:focus{
-    background-color: $accent-color;
-    color: $white-text-color;
+    background-color: variables.$accent-color;
+    color: variables.$white-text-color;
 }
 }
 
@@ -45,7 +46,7 @@
 
 &:hover,
 &:focus {
-    background-color: $accent-color;
+    background-color: variables.$accent-color;
     color: white;
     fill: currentColor;
 }

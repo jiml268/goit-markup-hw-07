@@ -1,3 +1,4 @@
+@use "../utils/variables";
 .footer__section {
     width: 1200px;
     display: flex;
@@ -9,6 +10,6 @@
 }
 
 .footer {
-    background-color: $backgroud-color;
+    background-color: variables.$backgroud-color;
     display: flex;
 }

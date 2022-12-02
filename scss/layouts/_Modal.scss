@@ -1,3 +1,5 @@
+ @use "../utils/variables";
+ @use "../components/button";
  .modal-window {
      position: absolute;
      width: 528px;
@@ -21,7 +23,7 @@
      text-align: center;
      letter-spacing: 0.03em;
 
-     color: $main-text-color;
+     color: variables.$main-text-color;
      margin-bottom: 12px;
  }
 
@@ -38,13 +40,13 @@
      height: 40px;
      border: 1px solid rgba(33, 33, 33, 0.2);
      border-radius: 4px;
-     transition: $border-color $timer $timing-function;
+     transition: variables.$border-color variables.$timer variables.$timing-function;
      cursor: pointer;
      padding-left: 42px;
 
 &:hover,
 &:focus{
-     border-color: $accent-color;
+     border-color: variables.$accent-color;
      outline: none;
  }
  }
@@ -62,7 +64,7 @@
 
 &:hover,
 &:focus{
-     border-color: $accent-color;
+     border-color: variables.$accent-color;
      outline: none
  }
 
@@ -77,18 +79,14 @@
      line-height: calc(14/12);
      letter-spacing: 0.01em;
 
-     color: $main-title-color;
+     color: variables.$main-title-color;
      margin-bottom: 4px;
  }
-
-
-  
-
   .modal-window__label:hover .modal-window__icon,
   .modal-window__label:focus .modal-window__icon,
   .modal-window__label:active .modal-window__icon
   {
-     color: $accent-color;
+     color: variables.$accent-color;
      fill: currentColor;
  }
 
@@ -98,7 +96,7 @@
 }
 
  .modal-submit-button {
-    @include button;
+    @include button.button;
  
  &:hover,
  &:focus {
@@ -112,7 +110,7 @@
      font-size: 14px;
      line-height: calc(24/14);
      letter-spacing: 0.03em;
-     color: $secondary-text-color;
+     color: variables.$secondary-text-color;
  }
 
  .modal-window__icon {
@@ -146,7 +144,7 @@
  .modal-checkbox {
      width: 16px;
      height: 15px;
-     border: 1px solid $black-color;
+     border: 1px solid variables.$black-color;
      border-radius: 2px;
      margin-right: 8px;
      margin-top: 5px;
@@ -157,13 +155,13 @@
  }
 
  .checkbox:checked+.modal__checkbox-label>.modal-checkbox {
-     background-color: $accent-color;
+     background-color: variables.$accent-color;
      border-color: white;
  }
  
 
  .modal__terms-condition-link:hover, .modal__terms-condition-link:focus{
-    color: $button-hover-color;
+    color: variables.$button-hover-color;
  }
 
 .modal__i-agree-text{
@@ -182,9 +180,9 @@ color: #757575;
      font-size: 14px;
      line-height: calc(24/14);
      letter-spacing: 0.03em;
-     color: $main-title-color;
+     color: variables.$main-title-color;
  }
 
  .modal__terms-condition-link:hover, .modal__terms-condition-link:focus{
-    color: $button-hover-color;
+    color: variables.$button-hover-color;
  }

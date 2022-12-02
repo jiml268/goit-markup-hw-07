@@ -1,5 +1,7 @@
+@use "../utils/variables";
+@use "../components/button";
 .hero-section {
-    background-color: $backgroud-color;
+    background-color: variables.$backgroud-color;
     padding-top: 200px;
     padding-bottom: 200px;
     min-width: 1200px;
@@ -23,13 +25,13 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $white-text-color;
+    color: variables.$white-text-color;
     width: 696px;
     margin-bottom: 30px;
 }
 
 .hero-section__button {
-    @include button
+    @include button.button
 }
 
 }
