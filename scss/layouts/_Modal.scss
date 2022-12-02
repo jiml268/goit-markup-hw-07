@@ -85,7 +85,9 @@
   
 
   .modal-window__label:hover .modal-window__icon,
-  .modal-window__label:focus .modal-window__icon {
+  .modal-window__label:focus .modal-window__icon,
+  .modal-window__label:active .modal-window__icon
+  {
      color: $accent-color;
      fill: currentColor;
  }
