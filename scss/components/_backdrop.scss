@@ -10,3 +10,9 @@
     transition: opacity $timer $timing-function;
     visibility: $timer $timing-function;
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
